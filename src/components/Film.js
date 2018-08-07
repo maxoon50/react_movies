@@ -1,12 +1,13 @@
 import React from 'react';
 import './Film.css'
 
-const Film = ({titre,resume,img})=>(
+const PATH_TO_IMG = '/imgs/';
+const Film = ({film, fn})=>(
     <div className="cont-img">
-    <div className="overflow"  onClick="">
-        <img src={ img } />
+    <div className="overflow"  onClick={fn}>
+        <img src={ PATH_TO_IMG + film.img } alt="couverture film"/>
     </div>
-    <p>{ titre }</p>
+    <p>{ film.titre }</p>
 </div>
 )
 

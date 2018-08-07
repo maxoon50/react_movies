@@ -8,7 +8,10 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <FilmContainer/>
+          <div id="main-cont">
+              <FilmContainer />
+          </div>
+
       </div>
     );
   }
